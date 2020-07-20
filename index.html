@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Web Applicatio</title>
+
+    <!-- script tag for bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- link to stylesheet -->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+
+    <!-- script tag for JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-row">
+        <div class="col-md">
+          <div class="card">
+            <div class="contain">
+              <img
+                class="card-img-top"
+                src="images/dayImage.jpeg"
+                style="height: 220px;"
+                alt="calender"
+              />
+              <div class="put-text" id="dayCalender"></div>
+            </div>
+            <div class="card-body">
+              <div class="space" id="daySpace"></div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-2">
+                  <button class="btn round-btn" type="submit">
+                    <img
+                      src="images/plus.png"
+                      alt="add"
+                      style="width: 25px; height: 25px;"
+                      id="addTodoDay"
+                    />
+                  </button>
+                </div>
+                <div class="col-10">
+                  <input
+                    class="form-control mt-1"
+                    type="text"
+                    placeholder="To Do"
+                    id="dayTodo"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="contain">
+              <img
+                class="card-img-top"
+                src="images/monthImage.jpeg"
+                style="height: 220px;"
+                alt="calender"
+              />
+              <div class="put-text" id="monthCalender"></div>
+            </div>
+            <div class="card-body">
+              <div class="space" id="monthSpace"></div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-2">
+                  <button class="btn btn-outline-none round-btn">
+                    <img
+                      src="images/plus.png"
+                      alt="add"
+                      style="width: 25px; height: 25px;"
+                      id="addTodoMonth"
+                    />
+                  </button>
+                </div>
+                <div class="col-10">
+                  <input
+                    class="form-control mt-1"
+                    type="text"
+                    placeholder="To Do"
+                    id="monthTodo"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card">
+            <div class="contain">
+              <img
+                class="card-img-top"
+                src="images/yearImage.jpg"
+                style="height: 220px;"
+                alt="calender"
+              />
+              <div class="put-text" id="yearCalender"></div>
+            </div>
+            <div class="card-body">
+              <div class="space" id="yearSpace"></div>
+            </div>
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-2">
+                  <button class="btn btn-outline-none round-btn">
+                    <img
+                      src="images/plus.png"
+                      alt="add"
+                      style="width: 25px; height: 25px;"
+                      id="addTodoYear"
+                    />
+                  </button>
+                </div>
+                <div class="col-10">
+                  <input
+                    class="form-control mt-1"
+                    type="text"
+                    placeholder="To Do"
+                    id="yearTodo"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script tag for jScript file -->
+    <script src="index.js" type="text/javascript"></script>
+    <script src="month.js" type="text/javascript"></script>
+    <script src="year.js" type="text/javascript"></script>
+
+    <!--optional JS script tags for bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
